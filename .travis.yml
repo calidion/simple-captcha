@@ -1,4 +1,5 @@
-sudo: false
+sudo: true
+install: ./install-dependencies.sh
 language: node_js
 node_js:
   - 'iojs'
