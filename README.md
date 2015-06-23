@@ -2,6 +2,8 @@
 
 > Simple node captcha service
 
+![Captcha](/assets/captcha.png)
+
 
 ## Install
 
