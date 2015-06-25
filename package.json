@@ -1,6 +1,6 @@
 {
   "name": "simple-captcha",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "Simple node captcha service",
   "homepage": "https://github.com/JSSDKCN/simple-captcha",
   "author": {
@@ -11,7 +11,9 @@
   "repository": "https://github.com/JSSDKCN/simple-captcha.git",
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "lib",
+    "assets"
   ],
   "keywords": [
     "simple-captcha",
