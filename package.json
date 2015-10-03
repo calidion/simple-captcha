@@ -20,7 +20,8 @@
     "node"
   ],
   "dependencies": {
-    "canvas": "*"
+    "canvas": "*",
+    "express": "^4.13.3"
   },
   "devDependencies": {
     "grunt-cli": "^0.1.13",
