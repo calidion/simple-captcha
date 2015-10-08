@@ -15,16 +15,20 @@ $ npm install --save simple-captcha
 ## Usage
 
 ```js
-var simpleCaptcha = require('simple-captcha');
+var express = require('express');
+var http = express();
 
-  captcha: function(req, res) {
-    var captcha = require('simple-captcha').create({width: 100, height: 40});
-    req.session.captcha = captcha.text();
-    console.log(req.session.captcha);
-    captcha.generate();
-    res.write(captcha.buffer('image/png'));
-    res.end();
-  }
+http.all('/', function(req, res) {
+  var captcha = require('simple-captcha').create({width: 100, height: 40});
+  console.log(captcha.text());
+  captcha.generate();
+  res.write(captcha.buffer('image/png'));
+  res.end();
+});
+http.listen(9999, function() {
+  console.log('Express Server Running on Port 9999');
+  console.log('visit http://localhost:9999 to see the captcha');
+});
 ```
 
 
