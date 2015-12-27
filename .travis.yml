@@ -4,6 +4,7 @@ before_install:
   - sudo apt-get install -y libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++
 language: node_js
 node_js:
+  - '5.0'
   - '4.0'
   - 'iojs'
   - '0.12'

@@ -5,6 +5,15 @@
 ![Captcha](/assets/captcha.png)
 
 
+## Preinstall
+
+### Ubuntu
+
+```sh
+$ sudo apt-get update -qq
+$ sudo apt-get install -y libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++
+``` 
+
 ## Install
 
 ```sh
